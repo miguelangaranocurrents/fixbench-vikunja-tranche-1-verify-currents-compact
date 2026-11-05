@@ -2,7 +2,7 @@ import type {CurrentsConfig} from '@currents/playwright'
 
 const config: CurrentsConfig = {
 	projectId: process.env.CURRENTS_PROJECT_ID ?? '',
-	consoleOutput: 'detailed',
+	consoleOutput: 'compact',
 	outputFile: 'currents-report.json',
 }
 
