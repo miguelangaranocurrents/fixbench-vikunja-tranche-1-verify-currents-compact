@@ -192,8 +192,8 @@ importers:
         version: 4.1.3(vue@3.5.42(typescript@6.0.3))
     devDependencies:
       '@currents/playwright':
-        specifier: 2.6.0
-        version: 2.6.0(supports-color@10.2.2)
+        specifier: file:./currents-playwright-2.7.0-main.a8fce8a7.tgz
+        version: file:currents-playwright-2.7.0-main.a8fce8a7.tgz(supports-color@10.2.2)
       '@eslint/js':
         specifier: 10.0.1
         version: 10.0.1(eslint@10.10.0(jiti@2.7.0)(supports-color@10.2.2))
@@ -1364,9 +1364,10 @@ packages:
     resolution: {integrity: sha512-JHoejIiLoh0nkqyBTUydTilV9WHNBlWRNu9XoTmlyBcu/Aamdh0YCr7ORTLF9zggvQbCQstG9sCspSfj2yJGTw==}
     engines: {node: '>=8'}
 
-  '@currents/playwright@2.6.0':
-    resolution: {integrity: sha512-J1FDC6HJXI55V/TuGGVM8IS+cxQObEWr8p/6CRnIeXpcL+5nZcZ/o5jrhgMeQJqKXBvMCJeCqXPJAnjqIn2f8A==}
-    engines: {node: '>=18.17'}
+  '@currents/playwright@file:currents-playwright-2.7.0-main.a8fce8a7.tgz':
+    resolution: {integrity: sha512-smEOfEE9YBcDLZBOX+2wLqdlz/TSKV7br/GJwX+DjPdizRAw13TgEY/kMxvSvXxsuGGUOA0I71EBcN0hcMnpAQ==, tarball: file:currents-playwright-2.7.0-main.a8fce8a7.tgz}
+    version: 2.7.0-main.a8fce8a7
+    engines: {node: '>=20.18.1'}
     hasBin: true
 
   '@currents/rules@0.1.0':
@@ -6798,9 +6799,9 @@ packages:
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
-  undici@6.29.1:
-    resolution: {integrity: sha512-EvRlUt/QqAEvXdQeRMYUfwOQsfzpDztykrG2owGEE/rBOBoYv9uF39ZzsNDh4lTFHhTr2XOZjKkYgueD12ZmGA==}
-    engines: {node: '>=18.17'}
+  undici@7.30.1:
+    resolution: {integrity: sha512-03KrMbjIFDWQR5RNPrSw3bd1r12JpyFQl9/yxjUbJtqkjmllqC5lFjZh6ujeuJCKr8EOQvRW872Oy/az+nLYxg==}
+    engines: {node: '>=20.18.1'}
 
   unicode-canonical-property-names-ecmascript@2.0.1:
     resolution: {integrity: sha512-dA8WbNeb2a6oQzAQ55YlT5vQAWGV9WXOsi3SskE3bcCdM0P4SDd+24zS/OCacdRq5BkdsRj9q3Pg6YyQoxIGqg==}
@@ -7364,6 +7365,18 @@ packages:
 
   ws@8.21.3:
     resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
+  ws@8.22.1:
+    resolution: {integrity: sha512-oyL6OPYme/CmiFvNuGzeoxCJ4nOrZE2O1FwM9MWM1AsGri6nLXB2pg+lNA8aLeXMSav0J6eIVS1j6vUPzUtK9g==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -8670,7 +8683,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@currents/playwright@2.6.0(supports-color@10.2.2)':
+  '@currents/playwright@file:currents-playwright-2.7.0-main.a8fce8a7.tgz(supports-color@10.2.2)':
     dependencies:
       '@babel/code-frame': 7.29.7
       '@commander-js/extra-typings': 13.1.0(commander@13.1.0)
@@ -8703,8 +8716,8 @@ snapshots:
       tmp: 0.2.7
       tmp-promise: 3.0.3
       ts-pattern: 5.9.2
-      undici: 6.29.1
-      ws: 8.21.3
+      undici: 7.30.1
+      ws: 8.22.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -14420,7 +14433,7 @@ snapshots:
 
   undici-types@7.18.2: {}
 
-  undici@6.29.1: {}
+  undici@7.30.1: {}
 
   unicode-canonical-property-names-ecmascript@2.0.1: {}
 
@@ -15055,6 +15068,8 @@ snapshots:
       signal-exit: 4.1.0
 
   ws@8.21.3: {}
+
+  ws@8.22.1: {}
 
   wsl-utils@0.3.1:
     dependencies:

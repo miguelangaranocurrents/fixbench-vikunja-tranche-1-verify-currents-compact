@@ -109,7 +109,7 @@
     "zhyswan-vuedraggable": "4.1.3"
   },
   "devDependencies": {
-    "@currents/playwright": "2.6.0",
+    "@currents/playwright": "file:./currents-playwright-2.7.0-main.a8fce8a7.tgz",
     "@eslint/js": "10.0.1",
     "@faker-js/faker": "10.6.0",
     "@hey-api/openapi-ts": "0.99.0",
